@@ -67,9 +67,7 @@ Change the effective dates in:
 
 ### Update Emails
 Replace placeholder emails with your actual email addresses:
-- `privacy@smartbudgetmobile.com`
-- `legal@smartbudgetmobile.com`
-- `support@smartbudgetmobile.com`
+- `smartbudgetapplication@gmail.com` (for all contact purposes)
 
 ## 🔒 Security Features
 
