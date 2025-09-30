@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartBudget Support - Personal Finance App</title>
+    <title>SmartBudget Mobile - Legal Documents</title>
     <style>
         * {
             margin: 0;
@@ -20,7 +20,7 @@
         }
         
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             background: white;
@@ -55,7 +55,7 @@
         }
         
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             padding: 25px;
             background: #f8f9fa;
             border-radius: 15px;
@@ -66,43 +66,44 @@
             color: #2e7d32;
             margin-bottom: 20px;
             font-size: 1.5em;
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
         
-        .contact-info {
-            background: #e8f5e8;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 15px 0;
+        .document-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
         }
         
-        .contact-info p {
-            margin: 8px 0;
-            font-weight: 500;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            padding: 15px;
+        .document-card {
             background: white;
-            border-radius: 10px;
-            border: 1px solid #e0e0e0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
         }
         
-        .faq-question {
-            font-weight: 600;
+        .document-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-color: #4CAF50;
+        }
+        
+        .document-card h3 {
             color: #2e7d32;
-            margin-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
         }
         
-        .faq-answer {
+        .document-card p {
             color: #666;
+            margin-bottom: 20px;
             line-height: 1.5;
         }
         
-        .button {
+        .document-link {
             display: inline-block;
             background: #4CAF50;
             color: white;
@@ -111,44 +112,52 @@
             border-radius: 25px;
             font-weight: 600;
             transition: all 0.3s ease;
-            margin: 10px 5px;
         }
         
-        .button:hover {
+        .document-link:hover {
             background: #45a049;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
         }
         
         .app-info {
-            background: #f0f8ff;
+            background: #e8f5e8;
             padding: 20px;
             border-radius: 10px;
-            margin: 15px 0;
+            margin: 20px 0;
+        }
+        
+        .app-info h3 {
+            color: #2e7d32;
+            margin-bottom: 15px;
         }
         
         .app-info p {
-            margin: 5px 0;
+            margin: 8px 0;
             font-weight: 500;
         }
         
-        .legal-links {
+        .support-link {
             text-align: center;
-            margin-top: 30px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
+            margin: 30px 0;
         }
         
-        .legal-links a {
-            color: #4CAF50;
+        .support-link a {
+            display: inline-block;
+            background: #2196F3;
+            color: white;
+            padding: 15px 30px;
             text-decoration: none;
+            border-radius: 25px;
             font-weight: 600;
-            margin: 0 15px;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
         }
         
-        .legal-links a:hover {
-            text-decoration: underline;
+        .support-link a:hover {
+            background: #1976D2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
         }
         
         .footer {
@@ -172,19 +181,75 @@
             .section {
                 padding: 20px;
             }
+            
+            .document-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>💰 SmartBudget</h1>
-            <p>Your Personal Finance Companion</p>
+            <h1>📋 SmartBudget Mobile</h1>
+            <p>Legal Documents & Information</p>
         </div>
 
         <div class="section">
-            <h2>📧 Contact Support</h2>
-            <div class="contact-info">
+            <h2>📄 Legal Documents</h2>
+            <p>Access our comprehensive legal documents that govern your use of SmartBudget Mobile. These documents are designed to protect your privacy and clearly outline our terms of service.</p>
+            
+            <div class="document-grid">
+                <div class="document-card">
+                    <h3>🔒 Privacy Policy</h3>
+                    <p>Learn how we collect, use, and protect your personal and financial information. Our privacy policy covers data security, your rights, and our commitment to protecting your privacy.</p>
+                    <a href="privacy-policy.html" class="document-link">View Privacy Policy</a>
+                </div>
+                
+                <div class="document-card">
+                    <h3>📋 Terms of Service</h3>
+                    <p>Understand the terms and conditions for using SmartBudget Mobile. This document outlines your rights, responsibilities, and our service commitments.</p>
+                    <a href="terms-of-service.html" class="document-link">View Terms of Service</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📱 App Information</h2>
+            <div class="app-info">
+                <h3>SmartBudget Mobile Details</h3>
+                <p><strong>Version:</strong> 1.0.0</p>
+                <p><strong>Last Updated:</strong> January 2025</p>
+                <p><strong>Compatibility:</strong> iOS 15.1 or later</p>
+                <p><strong>Bundle ID:</strong> com.cmichael24.smartbudgetmobile</p>
+                <p><strong>Developer:</strong> Courtney Michael</p>
+                <p><strong>Category:</strong> Finance</p>
+                <p><strong>Price:</strong> Free</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔒 Data Protection & Privacy</h2>
+            <p>We take your privacy seriously. SmartBudget Mobile is designed with privacy-first principles:</p>
+            <ul>
+                <li><strong>Encrypted Storage:</strong> All your financial data is encrypted both in transit and at rest</li>
+                <li><strong>Secure Authentication:</strong> We use Firebase Auth for secure user authentication</li>
+                <li><strong>No Data Sharing:</strong> We never sell or share your personal financial information</li>
+                <li><strong>User Control:</strong> You have full control over your data and can export or delete it at any time</li>
+                <li><strong>Transparent Practices:</strong> Our privacy policy clearly explains all data practices</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📞 Support & Contact</h2>
+            <p>Need help or have questions about our legal documents? We're here to help:</p>
+            
+            <div class="support-link">
+                <a href="https://cmichael4.github.io/Smartbudget-support/">Visit Support Center</a>
+            </div>
+            
+            <div class="app-info">
+                <h3>Contact Information</h3>
                 <p><strong>Email:</strong> smartbudgetapplication@gmail.com</p>
                 <p><strong>Response Time:</strong> Within 24 hours</p>
                 <p><strong>Hours:</strong> Monday - Friday, 9 AM - 5 PM EST</p>
@@ -193,78 +258,22 @@
         </div>
 
         <div class="section">
-            <h2>❓ Frequently Asked Questions</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">How do I add my first expense?</div>
-                <div class="faq-answer">Tap the "+" button on the main screen, enter the amount and description, then tap "Save".</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">How do I set up my paycheck breakdown?</div>
-                <div class="faq-answer">Go to the Paycheck tab and enter your income and pay frequency. The app will automatically calculate your allocations.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Can I edit my savings goals?</div>
-                <div class="faq-answer">Yes! Go to the Investments tab and tap "Edit Goal" to modify your savings target.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">How do I view my spending history?</div>
-                <div class="faq-answer">Tap "View History" on the main screen to see all your past expenses organized by date.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Is my data secure?</div>
-                <div class="faq-answer">Yes! All your data is encrypted and stored securely using Firebase. We never share your personal financial information.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">How do I export my data?</div>
-                <div class="faq-answer">Go to Settings > Data Export to download your financial data in a portable format.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">How do I delete my account?</div>
-                <div class="faq-answer">Go to Settings > Account > Delete Account. This will permanently remove all your data.</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>🐛 Report a Bug</h2>
-            <p>Found a bug? Help us improve SmartBudget by reporting it:</p>
-            <a href="mailto:smartbudgetapplication@gmail.com?subject=Bug Report" class="button">Report Bug</a>
-        </div>
-
-        <div class="section">
-            <h2>💡 Feature Request</h2>
-            <p>Have an idea for a new feature? We'd love to hear it:</p>
-            <a href="mailto:smartbudgetapplication@gmail.com?subject=Feature Request" class="button">Suggest Feature</a>
-        </div>
-
-        <div class="section">
-            <h2>📱 App Information</h2>
-            <div class="app-info">
-                <p><strong>Version:</strong> 1.0.0</p>
-                <p><strong>Last Updated:</strong> January 2025</p>
-                <p><strong>Compatibility:</strong> iOS 15.1 or later</p>
-                <p><strong>Bundle ID:</strong> com.cmichael24.smartbudgetmobile</p>
-                <p><strong>Developer:</strong> Courtney Michael</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>📋 Legal Documents</h2>
-            <div class="legal-links">
-                <a href="https://cmichael4.github.io/smartbudget-legal/privacy-policy.html">Privacy Policy</a>
-                <a href="https://cmichael4.github.io/smartbudget-legal/terms-of-service.html">Terms of Service</a>
-            </div>
+            <h2>📋 App Store Compliance</h2>
+            <p>SmartBudget Mobile is fully compliant with Apple App Store guidelines:</p>
+            <ul>
+                <li>✅ Comprehensive Privacy Policy</li>
+                <li>✅ Clear Terms of Service</li>
+                <li>✅ Secure data handling practices</li>
+                <li>✅ User-friendly interface</li>
+                <li>✅ No objectionable content</li>
+                <li>✅ Proper age rating (4+)</li>
+            </ul>
         </div>
 
         <div class="footer">
-            <p>© 2025 SmartBudget. All rights reserved.</p>
-            <p>Your privacy is important to us. We protect your data and never share your personal financial information.</p>
+            <p>© 2025 SmartBudget Mobile. All rights reserved.</p>
+            <p>This website contains the legal documents for SmartBudget Mobile, a personal finance management application.</p>
+            <p>Last updated: January 2025</p>
         </div>
     </div>
 </body>
